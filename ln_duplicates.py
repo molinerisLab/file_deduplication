@@ -68,3 +68,6 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         sys.stderr.write("Usage: python deduplicate.py <total_rows>\n")
         sys.exit(1)
+        
+    deduplicate_with_hardlinks(int(sys.argv[1]))
+
